@@ -778,7 +778,7 @@ uint32_t drv_motion_enable(drv_motion_feature_mask_t feature_mask)
     /* Set features bits. */
     m_motion.features |= feature_mask;
     /* Set enabled sensors. */
-    m_motion.sensors |= (INV_XYZ_GYRO | INV_XYZ_ACCEL | ); //INV_XYZ_COMPASS );
+    m_motion.sensors |= (INV_XYZ_GYRO | INV_XYZ_ACCEL); // | INV_XYZ_COMPASS );
 
     if (!m_motion.running)
     {
